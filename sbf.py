@@ -74,9 +74,9 @@ def koki(cookies):
 
 class crack:
     def __init__(self,isifile):
-        self.ada=[];self.cp=[];self.ko=0;print('\n[•] Crack Dengan Password Default/Manual [d/m]')
+        self.ada=[];self.cp=[];self.ko=0;print('\n[•] Crack With Password Default/Manual [d/m]')
         while True:
-            f = input('[•] Pilih : ')
+            f = input('[•] choose : ')
             if f in [''] : continue
             elif f in ['m','M','2','02','002']:
                 try:
