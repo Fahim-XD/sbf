@@ -124,6 +124,6 @@ class crack:
             self.mbasic(fl)
 
 def started():
-    print('\n[•] Crack Sedang Berjalan...');print('[•] Akun [OK] Disimpan Ke ok.txt');print('[•] Akun [CP] Disimpan Ke cp.txt\n')
+    print('\n[•] Crack Ongoing...');print('[•] Account [OK] Saved To ok.txt');print('[•] Account [CP] Saved To cp.txt\n')
 
 if __name__=='__main__':os.system('git pull');menu()
