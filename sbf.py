@@ -32,7 +32,7 @@ def crack_publik():
     try:token = open("token.txt","r").read()
     except (KeyError,IOError):print('\n[!] Token Invalid');os.system('rm -rf token.txt');login()
     except requests.exceptions.ConnectionError:print('\n[!] Connection Problem ');os.system('rm -rf token.txt');login()
-    print('\n[•] Ketik \'me\' To Dump From Friends');i = input("[•] ID Public : ")
+    print('\n[•] Type \'me\' To Dump From Friends');i = input("[•] ID Public : ")
     try:
         try:o = requests.get("https://graph.facebook.com/" + i + "?access_token=" + token);b = json.loads(o.text);print ('[•] Nama : %s'%(b['name']))
         except (KeyError,IOError):print('\n[!] ID Not found');menu()
