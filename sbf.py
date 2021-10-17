@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor as ThreadPool
 ok = []
 cp = []
 ttl = []
-bulan_ttl = {"01": "Januari", "02": "Februari{"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "August", "09": "September", "10": "October", "11": "November", "12": "December"}
+bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "August", "09": "September", "10": "October", "11": "November", "12": "December"}
 
 def logo():
     print('\n   _______  ____    ___ \n  / __/ _ )/ __/___|_  | ┌────────────────────────┐\n _\ \/ _  / _//___/ __/  │  • Coded By FahimXD •  │\n/___/____/_/     /____/  │ Github.com/Fahim-XD/sbf│\n  Simple Brute Force     └────────────────────────┘\n')
