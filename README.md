@@ -10,6 +10,6 @@ cd sbf
 
 git pull
 
-python sbf.c
+python sbf.py
 
 ```
